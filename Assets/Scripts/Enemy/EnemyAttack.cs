@@ -5,8 +5,8 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField]private Vector2 towerPos;
     private EnemyStats enemyStats;
     [SerializeField]private LayerMask attackLayer;
-    private float attackCooldown;                 
-    private float attackTimer = 0f;  
+    [SerializeField]private float attackCooldown;                 
+    [SerializeField]private float attackTimer = 0f;  
 
     private void Start() {
         towerPos = TowerStats.instance.towerPos;
